@@ -30,7 +30,7 @@
         </div>
     </section> --}}
 
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/installation-bg.png">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/img/bg/installation-bg-1.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">@yield('title')</h1>

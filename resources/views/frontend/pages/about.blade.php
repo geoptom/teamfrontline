@@ -21,7 +21,7 @@
             <div class="row gy-4">
                 <div class="col-xl-7 mb-30 mb-xl-0">
                     <div class="img-box3">
-                        <div class="img1"><img src="{{asset('assets/img/frontline/data-center.jpg')}}" alt="About"></div>
+                        <div class="img1"><img src="{{asset('assets/img/frontline/data-center.webp')}}" alt="About"></div>
                         <div class="img2"><img src="{{asset('assets/img/frontline/ups_1.jpg')}}" alt="About"></div>
                         {{-- <div class="img1"><img src="assets/img/normal/about_3_1.jpg" alt="About"></div>
                         <div class="img2"><img src="assets/img/normal/about_3_2.jpg" alt="About"></div> --}}
