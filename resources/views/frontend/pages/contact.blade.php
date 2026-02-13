@@ -57,7 +57,7 @@
                         </div>
                         <h3 class="box-title"> SUPPORT DIVISION </h3>
                         <p class="box-text">
-                            +91 99955 59832 <br>
+                            +91 93499 84967 <br>
                             callcentre@teamfrontline.com
                         </p>
                     </div>
@@ -77,7 +77,7 @@
                             Gandhi Nagar, Kadavanthara,<br>
                             Kochi - Kerala - 682 017, INDIA
                         </p>
-                        <p class="text-white font-medium">📞 +91 484 – 2205125 / 2204125</p>
+                        <p class="text-white font-medium">📞 +91 93499 84974</p>
                         <p class="text-white font-medium">✉️ sales@teamfrontline.com</p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                         Naduvilayil House, Modakallur,<br>
                         Calicut - Kerala - 673 315, INDIA
                     </p>
-                    <p class="text-white font-medium">📞 +91 96450 77722</p>
+                    <p class="text-white font-medium">📞 +91 94469 34967</p>
                     <p class="text-white font-medium">✉️ sales@teamfrontline.com</p>
                     </div>
                 </div>
