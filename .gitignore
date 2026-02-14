@@ -13,3 +13,4 @@ yarn-error.log
 /.vs
 nohup.out
 composer.lock
+storage_public
