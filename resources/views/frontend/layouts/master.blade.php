@@ -57,7 +57,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}?v=5">
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
@@ -186,7 +186,7 @@
 
     <script src="{{ asset('assets/js/vendor/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}?v=5"></script>
     <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="{{ asset('assets/js/circle-progress.js') }}"></script>
@@ -214,7 +214,7 @@
     <!--multiple-image-video js-->
     <script src="{{ asset('assets/js/multiple-image-video.js') }}"></script>
 
-    <script src="{{ asset('assets/js/main.js?ver=1.0') }}"></script>
+    <script src="{{ asset('assets/js/main.js?ver=1.1') }}"></script>
 
 
     <!--main/custom js-->
