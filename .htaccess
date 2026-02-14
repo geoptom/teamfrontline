@@ -1,3 +1,25 @@
+# --------------------------------------------------
+# BLOCK ACCESS TO HIDDEN & SENSITIVE FILES
+# --------------------------------------------------
+
+# Block .env and all dotfiles
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Block composer, artisan, config files
+<FilesMatch "^(composer\.json|composer\.lock|artisan|package\.json|webpack\.mix\.js)$">
+    Require all denied
+</FilesMatch>
+
+# Block vendor access
+RewriteRule ^vendor/ - [F,L]
+
+# Block PHP execution inside storage
+RewriteRule ^storage/.*\.php$ - [F,L]
+
+
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
