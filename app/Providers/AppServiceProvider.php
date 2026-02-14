@@ -78,6 +78,35 @@ class AppServiceProvider extends ServiceProvider
         Config::set('broadcasting.connections.pusher.options.cluster', $pusher['pusher_cluster'] ?? 'ap2');
         Config::set('broadcasting.connections.pusher.options.host', "api-" . ($pusher['pusher_cluster'] ?? 'ap2') . ".pusher.com");
 
+
+        /**
+         * ==========================
+         * RECAPTCHA CONFIG
+         * ==========================
+         */
+        $recaptchaRaw = $settings['security']['recaptcha'] ?? null;
+        $recaptcha    = $recaptchaRaw ? json_decode($recaptchaRaw, true) : [];
+
+        Config::set('services.recaptcha.enable', $recaptcha['enabled'] ?? false);
+        Config::set('services.recaptcha.site_key', $recaptcha['site_key'] ?? null);
+        Config::set('services.recaptcha.secret_key', $recaptcha['secret_key'] ?? null);
+
+
+        /**
+         * ==========================
+         * CONTACT FORM FORWARD CONFIG
+         * ==========================
+         */
+        $contact = $settings['contact'] ?? [];
+
+        Config::set('contact.forward_enabled', $contact['forward_enabled'] ?? false);
+
+        $emails = isset($contact['forward_to'])
+            ? array_filter(array_map('trim', explode(',', $contact['forward_to'])))
+            : [];
+
+        Config::set('contact.forward_to', $emails);
+
         /**
          * ================================
          * MAKE ALL SETTINGS AVAILABLE

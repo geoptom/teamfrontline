@@ -156,6 +156,17 @@
         }
     </style>
     @stack('styles')
+
+    @if(isset($settings['analytics']['google_analytics_id']) && $settings['analytics']['google_analytics_id'] != '')
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{$settings['analytics']['google_analytics_id']}}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '{{$settings['analytics']['google_analytics_id']}}');
+        </script>
+    @endif
 </head>
 
 <body>
@@ -214,7 +225,7 @@
     <!--multiple-image-video js-->
     <script src="{{ asset('assets/js/multiple-image-video.js') }}"></script>
 
-    <script src="{{ asset('assets/js/main.js?ver=1.1') }}"></script>
+    <script src="{{ asset('assets/js/main.js?ver=1.2') }}"></script>
 
 
     <!--main/custom js-->

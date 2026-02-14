@@ -10,14 +10,14 @@
                         href="#panel-general" role="tab">General</a>
                     <a class="list-group-item list-group-item-action" id="tab-appearance" data-bs-toggle="list"
                         href="#panel-appearance" role="tab">Appearance</a>
-                    <a class="list-group-item list-group-item-action" id="tab-pusher" data-bs-toggle="list"
-                        href="#panel-pusher" role="tab">Pusher</a>
+                    {{-- <a class="list-group-item list-group-item-action" id="tab-pusher" data-bs-toggle="list"
+                        href="#panel-pusher" role="tab">Pusher</a> --}}
                     <a class="list-group-item list-group-item-action" id="tab-seo" data-bs-toggle="list" href="#panel-seo"
                         role="tab">SEO</a>
                     <a class="list-group-item list-group-item-action" id="tab-footer" data-bs-toggle="list"
                         href="#panel-footer" role="tab">Footer</a>
-                    <a class="list-group-item list-group-item-action" id="tab-integrations" data-bs-toggle="list"
-                        href="#panel-integrations" role="tab">Integrations</a>
+                    {{-- <a class="list-group-item list-group-item-action" id="tab-integrations" data-bs-toggle="list"
+                        href="#panel-integrations" role="tab">Integrations</a> --}}
                     <a class="list-group-item list-group-item-action" id="tab-security" data-bs-toggle="list"
                         href="#panel-security" role="tab">Security</a>
                     <a class="list-group-item list-group-item-action" id="tab-analytics" data-bs-toggle="list"
@@ -423,11 +423,11 @@
                                     <input type="text" name="google_analytics_id" class="form-control"
                                         value="{{ $settings['analytics']['google_analytics_id'] ?? '' }}">
                                 </div>
-                                <div class="col-md-6 mb-3">
+                                {{-- <div class="col-md-6 mb-3">
                                     <label class="form-label">Google Tag Manager ID</label>
                                     <input type="text" name="google_tag_manager_id" class="form-control"
                                         value="{{ $settings['analytics']['google_tag_manager_id'] ?? '' }}">
-                                </div>
+                                </div> --}}
                             </div>
                             <button type="submit" class="btn btn-theme">Save Analytics Settings</button>
                         </form>

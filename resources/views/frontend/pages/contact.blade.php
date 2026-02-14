@@ -30,7 +30,7 @@
                         </div>
                         <h3 class="box-title"> IT DIVISION </h3>
                         <p class="box-text">
-                            + 91 85929 88890 <br>
+                            + 91 93499 84974 <br>
                             sales@teamfrontline.com
 
                         </p>
@@ -58,7 +58,7 @@
                         <h3 class="box-title"> SUPPORT DIVISION </h3>
                         <p class="box-text">
                             +91 93499 84967 <br>
-                            callcentre@teamfrontline.com
+                            sunil.r@teamfrontline.com
                         </p>
                     </div>
                 </div>
@@ -128,14 +128,8 @@
                                     placeholder="Phone Number">
                             </div>
                             <div class="form-group col-md-6">
-                                <select name="subject" id="subject" class="form-select nice-select">
-                                    <option value="" disabled="disabled" selected="selected" hidden>Select an
-                                        Options
-                                    </option>
-                                    @foreach ($solutions as $solution)
-                                        <option value="{{$solution->name}}">{{$solution->name}}</option>
-                                    @endforeach
-                                </select>
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject">
                             </div>
                             <div class="form-group col-12">
                                 <textarea name="message" id="message" cols="30" rows="3" class="form-control"
@@ -163,3 +157,10 @@
 
 
 @endsection
+
+@push('scripts')
+
+    @if (config('services.recaptcha.enable'))
+        <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.site_key') }}"></script>
+    @endif
+@endpush

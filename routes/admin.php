@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CareerApplicationController;
 use App\Http\Controllers\Admin\CareerController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ContactMessageController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\RedirectController;
@@ -94,3 +95,9 @@ Route::post('/settings/test/smtp-advanced', [SettingController::class, 'testSmtp
 
 
 Route::get('reports/product/imports', [ProductController::class, 'importLogs'])->name('reports.products.import');
+
+
+Route::get('/messages', [ContactMessageController::class, 'index'])->name('messages.index');
+Route::get('/messages/{id}', [ContactMessageController::class, 'show'])->name('messages.show');
+Route::post('/messages/{id}/read', [ContactMessageController::class, 'markRead'])->name('messages.read');
+Route::delete('/messages/{id}', [ContactMessageController::class, 'destroy'])->name('messages.delete');

@@ -369,7 +369,7 @@
                 .done(function (t) {
                     u.removeClass("error"),
                         u.addClass("success"),
-                        u.text(t),
+                        u.text(t.message),
                         e(
                             l + ' input:not([type="submit"]),' + l + " textarea"
                         ).val("");

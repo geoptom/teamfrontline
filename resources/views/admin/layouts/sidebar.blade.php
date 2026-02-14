@@ -132,7 +132,7 @@
         </li>
         <li class="nav-item mb-2">
             @php
-                $reportActive = request()->is('admin/reports*') || request()->is('admin/logs*') ;
+                $reportActive = request()->is('admin/reports*') || request()->is('admin/logs*')  || request()->is('admin/messages*') ;
             @endphp
             <a class="nav-link d-flex justify-content-between align-items-center {{ $reportActive ? 'text-theme fw-bold' : 'text-dark' }}"
                data-bs-toggle="collapse" href="#reportMenu" role="button" aria-expanded="{{ $reportActive ? 'true' : 'false' }}" aria-controls="reportMenu">
@@ -145,6 +145,12 @@
                     <li class="nav-item mb-1">
                         <a href="{{ route('admin.reports.products.import') }}" class="nav-link {{ request()->is('admin/reports/product/imports*') ? 'text-theme fw-bold' : 'text-dark' }}">
                              Product Imports
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a href="{{ route('admin.messages.index') }}" class="nav-link {{ request()->is('admin/messages*') ? 'text-theme fw-bold' : 'text-dark' }}">
+                             Contacts
                         </a>
                     </li>
                 </ul>
