@@ -65,21 +65,21 @@
 
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/jquery.calendar.css') }}"> --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/jquery.exzoom.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/jquery.exzoom.css') }}"> --}}
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/venobox.min.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/select2.min.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/slick.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/venobox.min.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/select2.min.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/slick.css') }}"> --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/multiple-image-video.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/multiple-image-video.css') }}"> --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/venobox.min.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/venobox.min.css') }}"> --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/mobile_menu.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/responsive.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('frontend-OLD/css/style.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/mobile_menu.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/responsive.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}"> --}}
     {{-- #FAC8E5 --}}
     <style>
         :root {
@@ -210,7 +210,7 @@
     <script src="{{ asset('assets/js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ asset('assets/js/SplitText.min.js') }}"></script>
     <script src="{{ asset('assets/js/lenis.min.js') }}"></script>
-    <script src="{{ asset('frontend-OLD/js/jquery.exzoom.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.exzoom.js') }}"></script>
 
     <!--select2 js-->
     <script src="{{ asset('assets/js/select2.min.js') }}"></script>
